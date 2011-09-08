@@ -3,4 +3,8 @@ task :compile do
   `compass compile`
 end
 
+task :watch do
+  `compass watch`
+end
+
 task :default => :compile
