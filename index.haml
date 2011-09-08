@@ -1,9 +1,12 @@
 !!!
 %html
   %head
-    %title Osurb
-    %link(rel='stylesheet' type='text/css' href='osurb.css')
-  %body
+    %title CWDG :: Web Ninjas Unite
+    %link(href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css")
+    %link(href="/css/print.css" media="print" rel="stylesheet" type="text/css")
+    /[if lt IE 8]
+      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  %body.bp
     #background-bar
     #header
       %ul.relevant_links
@@ -14,8 +17,8 @@
         %li
           %a.button{:href => "http://webchat.freenode.net/"} #osurb on irc
         %li.last
-          %a.button{:href => "https://github.com/osurb"} osu.rb on GitHub
-      %h1 osu.rb
+          %a.button{:href => "https://github.com/CWDG"} GitHub
+      %h1 Collegiate Web Developers Group
       %img{:id => 'logo', :src => 'osurb.png'}
     #content
       %ul
@@ -42,4 +45,3 @@
             %h2 Project
             %p
               Getting your hands dirty is the best way to learn. That's why we make an effort to take some project from concept to completion each quarter. This gives us practical experience with all the technical challenges, design, project management, and collaboration.
-
