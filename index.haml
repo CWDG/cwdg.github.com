@@ -8,41 +8,34 @@
     /[if lt IE 8]
       <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   %body.bp
-    #background-bar
-    #header
-      %ul.relevant_links
-        %li.first
-          %a.button{:href => "http://groups.google.com/group/studioctrubywebdev"} Join the Mailing List
-        %li
-          %a.button{:href => "http://twitter.com/osurb"} Follow us on Twitter
-        %li
-          %a.button{:href => "http://webchat.freenode.net/"} #osurb on irc
-        %li.last
-          %a.button{:href => "https://github.com/CWDG"} GitHub
+    #container
+      #header
+        %ul.relevant-links
+          %li.first
+            %a.button{:href => "http://go.osu.edu/cwdglist"} Join the Mailing List
+          %li
+            %a.button{:href => "https://github.com/CWDG"} GitHub
+          %li
+            %a.button{:href => "http://www.facebook.com/groups/cwdgosu/"} Facebook
+          %li.last
+            %a.button{:href => "http://groups.google.com/group/cwdgosu"} Mailing List Archives
       %h1 Collegiate Web Developers Group
-      %img{:id => 'logo', :src => 'images/dg-logo.png'}
-    #content
-      %ul
-        %li.blurb
-          .introduction
-            %h2 Who Are We?
+      #content
+        .section.about
+          %h2 Who Are We?
+          .content
             %p
-              We're a bunch of students, graduates and alumni at the Ohio State University interested in using Ruby to create interesting things.
-
-        %li.blurb
-          .introduction
-            %h2 Who Can Join?
+              We're a bunch of students, graduates and alumni at the Ohio State University who are getting involved in web development to improve our skills and teach others
+        .section.membership
+          %h2 Who Can Join?
+          .content
             %p
-              Current Ohio State students make up the bulk of our ranks, but anyone can join. Most important stuff is discussed at the weekly meeting, but you should also check out online communications.
-
-        %li.blurb
-          .introduction
-            %h2 Meetings
+              Anyone student who wants to get involved in web development. It doesn't matter if you are an experienced developer or a beginner. CWDG offers something for all skill levels.
+        .section.meetings
+          %h2 Meetings
+          .content
             %p
-              We are currently meeting <em>every Tuesday</em> at <em>7:00pm</em> in <em>Dreese Labs</em> room <em>264</em>. We try to spend equal time on presentations or discussion and then switch gears to pairing to work on the quarterly project. We also use IRC for a lot of informal discussion throughout the week.
-
-        %li.blurb
-          .introduction
-            %h2 Project
-            %p
-              Getting your hands dirty is the best way to learn. That's why we make an effort to take some project from concept to completion each quarter. This gives us practical experience with all the technical challenges, design, project management, and collaboration.
+              :markdown
+                We are currently meeting *every Tuesday* at *7:00pm* in *Dreese Labs* room *264*. Most meetings will be on campus at this location. Sometimes these meetings will be tutorials are other small projects while other days there might be a guest speaker. [Join the mailing list](http://go.osu.edu/cwdglist) to see what's coming up.
+      #footer
+        %p Collegiate Web Developers

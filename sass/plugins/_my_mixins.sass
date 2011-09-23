@@ -1,0 +1,5 @@
+@mixin inset-shadow($bcolor: $blueprint-background-color, $fcolor: $font-color, $size: .08em)
+  $mycolor: $fcolor
+  @if lightness($bcolor) > lightness($fcolor) 
+    $mycolor: $bcolor
+  +text-shadow(darken($mycolor, 8%) #{-$size} #{-$size} 0, lighten($mycolor, 15%) $size $size 0)

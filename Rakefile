@@ -1,5 +1,5 @@
 task :compile do
-  `haml index.haml -f html5 index.html`
+  `haml -f html5 index.haml index.html`
   `compass compile`
 end
 

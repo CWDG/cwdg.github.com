@@ -1,14 +1,72 @@
 // This import applies a global reset to any page that imports this stylesheet.
 @import blueprint/reset
 
-// To configure blueprint, edit the partials/base.sass file.
-@import partials/base
-
 // Import all the default blueprint modules so that we can access their mixins.
+$alt-text-color: #cccccc 
+$blueprint-background-color: #fafafa 
+$blueprint-border-color: #ddd 
+
+$link-color: #c46 
+$link-hover-color: #f69 
+
 @import blueprint
+@import "blueprint/buttons"
 
-// Combine the partials into a single screen stylesheet.
-@import partials/page
-@import partials/form
-@import partials/two_col
+$blueprint-font-family: DejaVu Sans, Helvetica, Arial, sans-serif
+$blueprint-fixed-font-family: Inconsolata, DejaVu Sans Mono, "andale mono", monospace
+$blueprint-font-size: 13px
 
+@import compass/css3
+@import plugins/my_mixins
+
+//Uncomment the following for a liquid layout
+//$blueprint-liquid-container-width: 86%
+//@import blueprint/liquid
+
+//Start Styling
+html
+  background: $blueprint-background-color
+
+body.bp
+  +blueprint(true)
+
+#container
+  +container
+
+#header, #footer
+  +column(24, true)
+
+#header
+  h1
+    font-size: .8em
+    font-family: "Bebas", $blueprint-font-family
+  .relevant-links
+    +column(24, true)
+    margin: 0 0 1em
+    padding: 0
+    li
+      +column(6)
+      text-align: center
+      &.last
+        +last
+      a
+        +anchor-button
+
+#content
+  +column(18)
+  +push(3)
+  +append(3)
+  .section
+    $spacing: .5em
+    +inset-shadow
+    h2
+      margin-bottom: 0
+    .content
+      background: #e6e6e6
+      border: 1px solid #f0f0f0
+      margin: 0 0 $spacing
+      padding: $spacing
+      +box-shadow(darken(#e6e6e6, 30%) 0 0 $spacing * .7 inset)
+      +border-radius($spacing)
+      p
+        margin: 0
