@@ -1088,12 +1088,13 @@ body.bp textarea {
   font-family: "Josefin Sans", "Copse", DejaVu Sans, Helvetica, Arial, sans-serif;
   margin-bottom: 0.2em;
   text-align: center;
+  line-height: 2em;
 }
-/* line 58, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 #header h1 span.tag {
   font-size: 1.4em;
 }
-/* line 60, ../sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 #header ul.relevant-links {
   width: 950px;
   margin: 0 auto;
@@ -1101,18 +1102,18 @@ body.bp textarea {
   *zoom: 1;
   padding: 0;
 }
-/* line 63, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 #header ul.relevant-links li {
   text-align: center;
   display: inline;
   float: right;
   margin: 0;
 }
-/* line 67, ../sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 #header ul.relevant-links li.last {
   margin-right: 0;
 }
-/* line 69, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 #header ul.relevant-links li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -1163,7 +1164,7 @@ body.bp textarea {
   height: 16px;
   float: none;
 }
-/* line 79, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 #header ul.relevant-links li a:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5%, #e3e3e3), color-stop(100%, #f0f0f0));
   background-image: -webkit-linear-gradient(center top, #e3e3e3 5%, #f0f0f0 100%);
@@ -1175,7 +1176,7 @@ body.bp textarea {
   color: #96373a;
 }
 
-/* line 84, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 #content {
   display: inline;
   float: left;
@@ -1191,15 +1192,15 @@ body.bp textarea {
 * html #content {
   overflow-x: hidden;
 }
-/* line 88, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #content .section {
   text-shadow: #cecece 0 -0.08em 0, white 0.08em 0.08em 0;
 }
-/* line 91, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #content .section h2 {
   margin-bottom: 0;
 }
-/* line 93, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
 #content .section .content {
   background: #e6e6e6;
   border: 1px solid #f0f0f0;
@@ -1216,12 +1217,12 @@ body.bp textarea {
   -khtml-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 100, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 #content .section .content p {
   margin: 0;
 }
 
-/* line 103, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 #footer {
   font-family: "Copse", DejaVu Sans, Helvetica, Arial, sans-serif;
   text-shadow: #cecece 0 -0.08em 0, white 0.08em 0.08em 0;
