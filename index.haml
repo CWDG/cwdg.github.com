@@ -1,41 +1,41 @@
 !!!
 %html
   %head
-    %title CWDG :: Web Ninjas Unite
+    %title &lt;CWDG/&gt; Web Ninjas Unite
     %link(href="favicon.ico" rel="icon" type="image/x-icon")
     %link(href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css")
     %link(href="/css/print.css" media="print" rel="stylesheet" type="text/css")
     /[if lt IE 8]
       <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   %body.bp
-    #container
-      #header
-        %ul.relevant-links
+    #header
+      %ul.relevant-links
+        %li.last
+          %a.button{:target => "blank", :href => "http://groups.google.com/group/cwdgosu"} Mailing List Archives
+          %li
+            %a.button{:target => "blank", :href => "http://www.facebook.com/groups/cwdgosu/"} Facebook
+          %li
+            %a.button{:target => "blank", :href => "https://github.com/CWDG"} GitHub
           %li.first
-            %a.button{:href => "http://go.osu.edu/cwdglist"} Join the Mailing List
-          %li
-            %a.button{:href => "https://github.com/CWDG"} GitHub
-          %li
-            %a.button{:href => "http://www.facebook.com/groups/cwdgosu/"} Facebook
-          %li.last
-            %a.button{:href => "http://groups.google.com/group/cwdgosu"} Mailing List Archives
-      %h1 Collegiate Web Developers Group
+            %a.button{:target => "blank", :href => "http://go.osu.edu/cwdglist"} Join the Mailing List
+      %h1 <span class="tag">&lt;</span>Collegiate Web Developers Group<span class="slash">/</span><span class="tag">&gt;</span>
+    #container
       #content
         .section.about
-          %h2 Who Are We?
+          %h2 What is CWDG?
           .content
             %p
-              We're a bunch of students, graduates and alumni at the Ohio State University who are getting involved in web development to improve our skills and teach others
+              We are a collection of students, graduates and alumni at the Ohio State University who are making an effort to improve the web. We work hard to make ourselves, and others, better developers.
         .section.membership
-          %h2 Who Can Join?
+          %h2 How can I Join?
           .content
             %p
-              Anyone student who wants to get involved in web development. It doesn't matter if you are an experienced developer or a beginner. CWDG offers something for all skill levels.
+              If you are an OSU student who wants to get involved in web development this club is for you. It doesn't matter if you are an experienced developer or a beginner. CWDG offers something for all skill levels.
         .section.meetings
-          %h2 Meetings
+          %h2 And the meetings are . . . ?
           .content
-            %p
-              :markdown
-                We are currently meeting *every Tuesday* at *7:00pm* in *Dreese Labs* room *264*. Most meetings will be on campus at this location. Sometimes these meetings will be tutorials are other small projects while other days there might be a guest speaker. [Join the mailing list](http://go.osu.edu/cwdglist) to see what's coming up.
-      #footer
-        %p Collegiate Web Developers
+            :markdown
+              We are currently meeting *every Tuesday* at *7:00pm* in *Dreese Labs* room *264*. Most meetings will be on campus at this location. Sometimes these meetings will be tutorials are other small projects while other days there might be a guest speaker. [Join the mailing list](http://go.osu.edu/cwdglist) to see what's coming up.
+    #footer
+      :markdown
+        Email [cwdgosu@gmail.com](mailto:cwdgosu@gmail.com) for more information.
