@@ -14,6 +14,14 @@ Developers Group.
   * blueprint/semantic
 * HAML
   
+###Getting Started
+
+Make sure before you update anything that you have all of the
+dependencies. To get all of the proper gems:
+
+    bundle install
+
+
 ###Start Coding
 
 Make sure to only modify .haml and .sass files since the .css and .html files
