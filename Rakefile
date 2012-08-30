@@ -1,5 +1,10 @@
+require 'pry'
+
 task :compile do
-  `haml -f html5 index.haml index.html`
+  FileList['*.haml'].each do |haml|
+    html = haml.gsub(/\.haml\Z/, '.html')
+    `haml -f html5 #{haml} #{html}`
+  end
   `compass compile`
 end
 

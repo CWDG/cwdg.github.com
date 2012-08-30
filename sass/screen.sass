@@ -29,6 +29,9 @@ $blueprint-font-size: 13px
 //$blueprint-liquid-container-width: 86%
 //@import blueprint/liquid
 
+body.bp
+  +blueprint(true)
+
 //Start Styling
 $logo_font: "Josefin Sans"
 $header-font: "Copse", $blueprint-font-family
@@ -39,8 +42,12 @@ html
 h1, h2, h3, h4, h5, h6
   font-family: $header-font
 
-body.bp
-  +blueprint(true)
+a, body.bp a
+  text-decoration: none
+a:hover, body.bp a:hover
+  text-decoration: underline
+a.banner:hover, body.bp a.banner:hover
+  text-decoration: none
 
 #container
   +container
@@ -53,7 +60,7 @@ body.bp
     font-size: 4em
     color: $myred
     font-family: $logo_font, $header-font
-    margin-bottom: .2em
+    margin-bottom: 1em
     text-align: center
     line-height: 2em
     span.tag
@@ -102,14 +109,39 @@ body.bp
       +box-shadow(darken(#e6e6e6, 30%) 0 0 $spacing * .7 inset)
       +border-radius($spacing)
       p
-        margin: 0
+        margin-bottom: 20px
+      p:last-child
+        margin-bottom: 0
+      blockquote
+        color: #544
+        font-style: normal
+        em
+          color: $myred
 
   .section.schedule
     ul
       list-style-type: none
+
+      ul > li
+        margin-left: 44px
     em
       color: $myred
       margin-left: 10px
+
+  .section.faq
+    ul
+      list-style-type: none
+
+      & > li      
+        margin-top: 0
+        margin-bottom: 20px
+
+        &:last-child
+          margin-bottom: 0
+
+      ul > li
+        margin-left: 20px
+
 
 #footer
   font-family: $header-font
