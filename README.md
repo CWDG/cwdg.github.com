@@ -2,7 +2,7 @@
 
 ##Description
 
-Static stie to display some basica information about the Collegiate Web
+Static site to display some basica information about the Collegiate Web
 Developers Group.
 
 ##Development
