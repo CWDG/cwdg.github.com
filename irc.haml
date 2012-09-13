@@ -1,0 +1,64 @@
+!!!
+%html
+  %head
+    %title &lt;CWDG/&gt; Web Ninjas Unite
+    %link(href="favicon.ico" rel="icon" type="image/x-icon")
+    %link(href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css")
+    %link(href="css/print.css" media="print" rel="stylesheet" type="text/css")
+    /[if lt IE 8]
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+  %body.bp
+    #header
+      %ul.relevant-links
+        %li.last
+          %a.button{:target => "blank", :href => "http://groups.google.com/group/cwdgosu"} Mailing List Archives
+          %li
+            %a.button{:target => "blank", :href => "http://www.twitter.com/cwdgosu"} Twitter
+          %li
+            %a.button{:target => "blank", :href => "http://www.facebook.com/groups/cwdgosu/"} Facebook
+          %li
+            %a.button{:target => "blank", :href => "https://github.com/CWDG"} GitHub
+          %li
+            %a.button{:target => "blank", :href => "irc.html"} Chat on IRC
+          %li.first
+            %a.button{:target => "blank", :href => "http://go.osu.edu/cwdglist"} Join the Mailing List
+      %a.banner{href: '/'}
+        %h1
+          %span.tag &lt;
+          Collegiate Web Developers Group
+          %span.slash /
+          %span.tag &gt;
+
+    #container
+      #content
+        .section
+          %h2 IRC Chat        
+          #irc
+            != '<iframe src="http://webchat.freenode.net?channels=cwdg&uio=Mz1mYWxzZSY5PXRydWUmMTE9MCYxMj10cnVl27" width="710" height="500"></iframe>'
+
+        .section.chat
+          %h2 Why Chat?
+          .content
+            :markdown
+              We'll try to hang out in IRC on a regular basis to help
+              people in a live chat format. We are cultivating a
+              community where we can help each other throughout the
+              week and share their experiences.
+
+        .section.options
+          %h2 Better Options?
+          .content
+            :markdown
+              There are better programs to use for IRC. These will
+              automatically connect and stay open longer. I've heard
+              good things about:
+              [XChat](http://xchat.org/),
+              [Pidgin](http://pidgin.im/),
+              [Adium](http://www.adium.im/),
+              [KVIrc](http://www.kvirc.net/),
+              [Colloquy](http://colloquy.info/),
+              and [Limechat](http://limechat.net/mac/).
+              You can find a much larger, more
+              [exhaustive list on Wikipedia](https://en.wikipedia.org/wiki/IRC_client#Clients)
+              and their [extensive comparison](https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients).
