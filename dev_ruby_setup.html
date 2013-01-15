@@ -45,126 +45,107 @@
         <div class='section goal'>
           <h2>Your Mission</h2>
           <div class='content'>
-            <p>This guide will show you how to setup your computer to follow along
-            with all the CWDG sessions. Everything we use here will be used again
-            countless times during the course of your web development career.</p>
+            <p>This guide will show you how to setup your computer to follow along with all the CWDG sessions. Everything we use here will be used again countless times during the course of your web development career.</p>
             
-            <p>The goal for tonight is to run a simple web server and publish the code
-            to the internet.</p>
+            <p>The goal for tonight is to run a simple web server and publish the code to the internet.</p>
           </div>
         </div>
         <div class='section rvm'>
           <h2>1. Setup the Ruby Version Manager</h2>
           <div class='content'>
-            <p>First we will install RVM. This is a program which does some basic
-            path manipulation to ensure you are using the correct version of ruby.</p>
+            <p>First we will install RVM. This is a program which does some basic path manipulation to ensure you are using the correct version of ruby.</p>
             
-            <p>It is recommended that you simply follow the
-            <a href="https://rvm.io/rvm/install/">Installation Instructions</a> on the
-            <a href="https://rvm.io/">main RVM website</a>. The project is quite well documented
-            in both <em>how</em> to use RVM and also <em>why</em>.</p>
+            <p>It is recommended that you simply follow the <a href='https://rvm.io/rvm/install/'>Installation Instructions</a> on the <a href='https://rvm.io/'>main RVM website</a>. The project is quite well documented in both <em>how</em> to use RVM and also <em>why</em>.</p>
             
-            <p><strong>Apple Users</strong> take note! Make sure you look into the
-            <a href="https://rvm.io/os/osx/">Special Instructions</a> for your computers.</p>
+            <p><strong>Apple Users</strong> take note! Make sure you look into the <a href='https://rvm.io/os/osx/'>Special Instructions</a> for your computers.</p>
             
-            <p>If you are a audio/video person, you can check out the
-            <a href="http://screencasts.org/episodes/how-to-use-rvm">RVM Screencast</a>,
-            but your milage may vary.</p>
+            <p>If you are a audio/video person, you can check out the <a href='http://screencasts.org/episodes/how-to-use-rvm'>RVM Screencast</a>, but your milage may vary.</p>
             
-            <p>I also recommend you run <code>rvm requirements</code> and make sure all the required
-            libraries are installed correctly. This will prevent problems down the
-            road and add a few optional, but wonderful features to ruby.</p>
+            <p>I also recommend you run <code>rvm requirements</code> and make sure all the required libraries are installed correctly. This will prevent problems down the road and add a few optional, but wonderful features to ruby.</p>
             
-            <p>Once RVM is installed, I recommend you close all your terminal windows.
-            Reopening your terminal, you can check to make sure that rvm is working.</p>
+            <p>Once RVM is installed, I recommend you close all your terminal windows. Reopening your terminal, you can check to make sure that rvm is working.</p>
             
-            <blockquote><p><code>rvm list</code></p></blockquote>
+            <blockquote>
+            <p><code>rvm list</code></p>
+            </blockquote>
             
             <p>If the command works, you may see something similar to</p>
             
-            <blockquote><pre><code>rvm rubies&#x000A;&#x000A;=* ruby-1.9.3-p194 [ i686 ]&#x000A;&#x000A;# =&gt; - current&#x000A;# =* - current &amp;&amp; default&#x000A;#  * - default&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>rvm rubies&#x000A;&#x000A;=* ruby-1.9.3-p194 [ i686 ]&#x000A;&#x000A;# =&gt; - current&#x000A;# =* - current &amp;&amp; default&#x000A;#  * - default</code></pre>
+            </blockquote>
             
-            <p>You may not have any "rubies installed". I recommend that you then run:</p>
+            <p>You may not have any &#8220;rubies installed&#8221;. I recommend that you then run:</p>
             
-            <blockquote><p><code>rvm install ruby-1.9.3</code></p></blockquote>
+            <blockquote>
+            <p><code>rvm install ruby-1.9.3</code></p>
+            </blockquote>
             
-            <p>While this is doing it's thing (it will take a while), you can move
-            onto steps 2 through 4.</p>
+            <p>While this is doing it&#8217;s thing (it will take a while), you can move onto steps 2 through 4.</p>
           </div>
         </div>
         <div class='section git'>
           <h2>2. Install Git</h2>
           <div class='content'>
-            <p>We also want to make sure we can save our work permanently. We will use the
-            version control system <a href="http://git-scm.com/" title="Git Source Control Manager">Git</a>.</p>
+            <p>We also want to make sure we can save our work permanently. We will use the version control system <a href='http://git-scm.com/' title='Git Source Control Manager'>Git</a>.</p>
             
-            <p><strong>Linux Users</strong>: Your favorite package manager will have a package for git.
-            You have my word as the anonymous narrator of this guide.</p>
+            <p><strong>Linux Users</strong>: Your favorite package manager will have a package for git. You have my word as the anonymous narrator of this guide.</p>
             
-            <blockquote><p>For example, <em>Ubuntu Users</em> will use the command <code>sudo apt-get install git</code>.</p></blockquote>
+            <blockquote>
+            <p>For example, <em>Ubuntu Users</em> will use the command <code>sudo apt-get install git</code>.</p>
+            </blockquote>
             
-            <p><strong>Apple Users</strong>:
-            You have a couple of options. If you are using Homebrew, use <code>brew install git</code>.
-            If you have no idea what Homebrew is, you can simply
-            <a href="http://git-scm.com/download/mac">Download Git</a> from their
-            <a href="http://git-scm.com/" title="Git Source Control Manager">website</a>.</p>
+            <p><strong>Apple Users</strong>: You have a couple of options. If you are using Homebrew, use <code>brew install git</code>. If you have no idea what Homebrew is, you can simply <a href='http://git-scm.com/download/mac'>Download Git</a> from their <a href='http://git-scm.com/' title='Git Source Control Manager'>website</a>.</p>
             
-            <p>If you get lost, Github provides
-            <a href="https://help.github.com/articles/set-up-git">detailed instructions</a>
-            that are much better than mine.</p>
+            <p>If you get lost, Github provides <a href='https://help.github.com/articles/set-up-git'>detailed instructions</a> that are much better than mine.</p>
           </div>
         </div>
         <div class='section github'>
           <h2>3. Signup for a Github Account</h2>
           <div class='content'>
-            <p>We want somewhere to put our code. As we are learning, we will be making our
-            code <a href="https://en.wikipedia.org/wiki/Open-source_software">open source</a>. This
-            is fantastic because we can learn from each other.</p>
+            <p>We want somewhere to put our code. As we are learning, we will be making our code <a href='https://en.wikipedia.org/wiki/Open-source_software'>open source</a>. This is fantastic because we can learn from each other.</p>
             
-            <p>We can also use <a href="https://github.com/">Github</a> for <em>free</em>!</p>
+            <p>We can also use <a href='https://github.com/'>Github</a> for <em>free</em>!</p>
             
-            <p>Go <a href="https://github.com/signup/free">Sign Up</a> now.</p>
+            <p>Go <a href='https://github.com/signup/free'>Sign Up</a> now.</p>
             
-            <p>Github has <a href="https://help.github.com/">fantastic documentation</a> detailing how
-            to use Git and take advantage of their services. You can explore this yourself now.
-            We will also begin covering git in more detail later this semester. Very useful
-            tool to know how to use. <em>+1 Marketable Skill</em>.</p>
+            <p>Github has <a href='https://help.github.com/'>fantastic documentation</a> detailing how to use Git and take advantage of their services. You can explore this yourself now. We will also begin covering git in more detail later this semester. Very useful tool to know how to use. <em>+1 Marketable Skill</em>.</p>
           </div>
         </div>
         <div class='section ssh-keys'>
           <h2>4. Setup SSH Keys</h2>
           <div class='content'>
-            <p>In order to use git from your terminal, you will need to setup some authentication
-            keys. Github uses SSH keys to authenticate users attempting to push code to
-            a repository (save code).</p>
+            <p>In order to use git from your terminal, you will need to setup some authentication keys. Github uses SSH keys to authenticate users attempting to push code to a repository (save code).</p>
             
-            <p>They have a <a href="https://help.github.com/articles/generating-ssh-keys">awesome guide</a>
-            for this. It is even tailored to your favorite operating system!</p>
+            <p>They have a <a href='https://help.github.com/articles/generating-ssh-keys'>awesome guide</a> for this. It is even tailored to your favorite operating system!</p>
             
-            <p>When generating your keyfiles, any options in [brackets] are default options.
-            I recommend you leave the filename of the keys to be their default (id_rsa).</p>
+            <p>When generating your keyfiles, any options in <span>brackets</span> are default options. I recommend you leave the filename of the keys to be their default (id_rsa).</p>
             
-            <p>You know you've got it <em>working correctly</em> if you are able to run the command</p>
+            <p>You know you&#8217;ve got it <em>working correctly</em> if you are able to run the command</p>
             
-            <blockquote><p><code>ssh -T git@github.com</code></p></blockquote>
+            <blockquote>
+            <p><code>ssh -T git@github.com</code></p>
+            </blockquote>
             
             <p>and see the output</p>
             
-            <blockquote><p><code>Hi *USERNAME*! You've successfully authenticated, but GitHub does not&#x000A; provide shell access.</code></p></blockquote>
+            <blockquote>
+            <p><code>Hi *USERNAME*! You&#39;ve successfully authenticated, but GitHub does not&#x000A; provide shell access.</code></p>
+            </blockquote>
             
-            <p>When you get this working, you know you're doing great.</p>
+            <p>When you get this working, you know you&#8217;re doing great.</p>
           </div>
         </div>
         <div class='section sinatra'>
           <h2>5. Install Sinatra</h2>
           <div class='content'>
-            <p>Now that you have RVM with ruby-1.9.3 installed, we can start using ruby. You are
-            going to run the command</p>
+            <p>Now that you have RVM with ruby-1.9.3 installed, we can start using ruby. You are going to run the command</p>
             
-            <blockquote><pre><code>gem install sinatra&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>gem install sinatra</code></pre>
+            </blockquote>
             
-            <p>This will install the <a href="http://sinatrarb.com/">Sinatra Web Framework</a>. It will be
-            our tool of choice for the next few weeks as we explore web development.</p>
+            <p>This will install the <a href='http://sinatrarb.com/'>Sinatra Web Framework</a>. It will be our tool of choice for the next few weeks as we explore web development.</p>
           </div>
         </div>
         <div class='section sinatra'>
@@ -172,32 +153,33 @@
           <div class='content'>
             <p>Now we get to <strong><em>CREATE</em></strong>! Create your first website!</p>
             
-            <p>The plan: We are going to create a project directory, a server file, a
-            documentation file. We'll then see our creation run in our browser.
-            Finally we'll push the results to Github.</p>
+            <p>The plan: We are going to create a project directory, a server file, a documentation file. We&#8217;ll then see our creation run in our browser. Finally we&#8217;ll push the results to Github.</p>
             
-            <p>Open your terminal and open a <a href="#text-editors">text editor</a>. Run:</p>
+            <p>Open your terminal and open a <a href='#text-editors'>text editor</a>. Run:</p>
             
-            <blockquote><pre><code>mkdir -p ~/cwdg_projects/hello_sinatra&#x000A;cd ~/cwdg_projects/hello_sinatra&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>mkdir -p ~/cwdg_projects/hello_sinatra&#x000A;cd ~/cwdg_projects/hello_sinatra</code></pre>
+            </blockquote>
             
             <p>Copy the following text into your text editor and save the file as <code>hi.rb</code>:</p>
             
-            <blockquote><pre><code>require 'sinatra'&#x000A;&#x000A;get '/hi' do&#x000A;  "Hello World!"&#x000A;end&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>require &#39;sinatra&#39;&#x000A;&#x000A;get &#39;/hi&#39; do&#x000A;  &quot;Hello World!&quot;&#x000A;end</code></pre>
+            </blockquote>
             
-            <p>This is going to create a page that just says "Hello World".</p>
+            <p>This is going to create a page that just says &#8220;Hello World&#8221;.</p>
             
             <p>Now you will start the server by running:</p>
             
-            <blockquote><pre><code>ruby hi.rb&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>ruby hi.rb</code></pre>
+            </blockquote>
             
             <p>It should output something similar to <code>Listening on 0.0.0.0:4567</code>.</p>
             
-            <p>You can look at this page by pointing your browser at
-            <a href="http://localhost:4567">http://localhost:4567</a>. You should get an error page
-            from Sinatra ("Sinatra doesn't know this ditty").</p>
+            <p>You can look at this page by pointing your browser at <a href='http://localhost:4567'>http://localhost:4567</a>. You should get an error page from Sinatra (&#8220;Sinatra doesn&#8217;t know this ditty&#8221;).</p>
             
-            <p>Now go to <a href="http://localhost:4567/hi">http://localhost:4567/hi</a>. You should
-            see "Hello World!" in your browser.</p>
+            <p>Now go to <a href='http://localhost:4567/hi'>http://localhost:4567/hi</a>. You should see &#8220;Hello World!&#8221; in your browser.</p>
             
             <p><strong><em>VICTORY!</em></strong></p>
           </div>
@@ -205,94 +187,59 @@
         <div class='section push'>
           <h2>7. Push to Github</h2>
           <div class='content'>
-            <p>Now we need to save this success for posterity.
-            <a href="https://github.com/new">Create a New Repo on Github</a>. Name it
-            <code>hello_sinatra</code> or whatever you like. Check "public" and hit "create repository".
-            Now we'll follow the directions on the next page.</p>
+            <p>Now we need to save this success for posterity. <a href='https://github.com/new'>Create a New Repo on Github</a>. Name it <code>hello_sinatra</code> or whatever you like. Check &#8220;public&#8221; and hit &#8220;create repository&#8221;. Now we&#8217;ll follow the directions on the next page.</p>
             
             <p>With your text editor, save a file called README.md in this directory with the text:</p>
             
-            <blockquote><pre><code>A basic Sinatra app.&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>A basic Sinatra app.</code></pre>
+            </blockquote>
             
             <p>In your terminal, run:</p>
             
-            <blockquote><pre><code>git init&#x000A;git add hi.rb&#x000A;git add README.md&#x000A;git commit -m "Basic Sinatra App"&#x000A;git remote add origin git@github.com:YOUR_USERNAME/hello_sinatra.git&#x000A;git push -u origin master&#x000A;</code></pre></blockquote>
+            <blockquote>
+            <pre><code>git init&#x000A;git add hi.rb&#x000A;git add README.md&#x000A;git commit -m &quot;Basic Sinatra App&quot;&#x000A;git remote add origin git@github.com:YOUR_USERNAME/hello_sinatra.git&#x000A;git push -u origin master</code></pre>
+            </blockquote>
             
-            <p>Make sure you used your own Github username. <em>YOUR_USERNAME</em> is a placeholder.
-            Replace it with whatever your real username is. You can check the
-            <a href="https://github.com/saterus/hello_sinatra">example I created</a> if you like.</p>
+            <p>Make sure you used your own Github username. <em>YOUR_USERNAME</em> is a placeholder. Replace it with whatever your real username is. You can check the <a href='https://github.com/saterus/hello_sinatra'>example I created</a> if you like.</p>
             
             <p>Check the Github page again. You should see your code saved to Github now!</p>
             
             <p><strong><em>MISSION ACCOMPLISHED!</em></strong></p>
             
-            <p>Everything is setup. Next week we will build on the work you did here. You can
-            read up on <a href="http://www.ruby-lang.org/en/">Ruby</a>,
-            <a href="http://git-scm.com/book/en/Getting-Started">Git</a>,
-            <a href="https://help.github.com/">Github</a>, <a href="http://www.sinatrarb.com/">Sinatra</a>, or
-            <a href="https://en.wikipedia.org/wiki/Web_development">Web Development</a> in the meantime.</p>
+            <p>Everything is setup. Next week we will build on the work you did here. You can read up on <a href='http://www.ruby-lang.org/en/'>Ruby</a>, <a href='http://git-scm.com/book/en/Getting-Started'>Git</a>, <a href='https://help.github.com/'>Github</a>, <a href='http://www.sinatrarb.com/'>Sinatra</a>, or <a href='https://en.wikipedia.org/wiki/Web_development'>Web Development</a> in the meantime.</p>
           </div>
         </div>
         <div class='section faq'>
           <h2>FAQ</h2>
           <div class='content'>
             <ul>
-            <li><p><strong>What do you mean by "run this command"?</strong></p>
-            
-            <ul>
-            <li>In your terminal application, type or paste the code snippet and hit enter.</li>
-            </ul>
+            <li>
+            <p><strong>What do you mean by &#8220;run this command&#8221;?</strong> - In your terminal application, type or paste the code snippet and hit enter.</p>
             </li>
-            <li><p><strong>I'm typing my password, but nothing shows up.</strong></p>
             
-            <ul>
-            <li>Don't worry! It is still working, it is just hiding your password from
-            anyone who might be standing behind you. When you are finished, just hit enter.</li>
-            </ul>
+            <li>
+            <p><strong>I&#8217;m typing my password, but nothing shows up.</strong> - Don&#8217;t worry! It is still working, it is just hiding your password from anyone who might be standing behind you. When you are finished, just hit enter.</p>
             </li>
-            <li><p><strong>Zlib isn't installed?</strong></p>
             
-            <ul>
-            <li>We noticed that some people using Ubuntu had issues installing Sinatra because
-            of a missing dependency. Follow <a href="https://rvm.io/packages/zlib/">these instructions</a>
-            in order to get your gem installs to work.</li>
-            </ul>
+            <li>
+            <p><strong>Zlib isn&#8217;t installed?</strong> - We noticed that some people using Ubuntu had issues installing Sinatra because of a missing dependency. Follow <a href='https://rvm.io/packages/zlib/'>these instructions</a> in order to get your gem installs to work.</p>
             </li>
-            <li><p><strong>I was installing XYZ, it says it failed. What should I do?</strong></p>
             
-            <ul>
-            <li>Try thinking of your problem in its general terms, then typing them into Google.
-            If you have a specific error message, try that.
-            <a href="http://stackoverflow.com/">Stack Overflow</a> is a pretty good resource for
-            common problems.</li>
-            </ul>
+            <li>
+            <p><strong>I was installing XYZ, it says it failed. What should I do?</strong> - Try thinking of your problem in its general terms, then typing them into Google. If you have a specific error message, try that. <a href='http://stackoverflow.com/'>Stack Overflow</a> is a pretty good resource for common problems.</p>
             </li>
-            <li><p><strong>Which text editor should I use?</strong></p>
             
-            <ul>
-            <li>It doesn't really matter. If someone tells you to use Emacs or Vim, they mean
-            well, but are likely just going to confuse you. You might want to try
-            <a href="http://projects.gnome.org/gedit/">Gedit</a> or
-            <a href="http://www.sublimetext.com/2">Sublime Text 2</a>.</li>
-            </ul>
+            <li>
+            <p><strong>Which text editor should I use?</strong> - It doesn&#8217;t really matter. If someone tells you to use Emacs or Vim, they mean well, but are likely just going to confuse you. You might want to try <a href='http://projects.gnome.org/gedit/'>Gedit</a> or <a href='http://www.sublimetext.com/2'>Sublime Text 2</a>.</p>
             </li>
-            <li><p><strong>I'm stuck.</strong></p>
             
-            <ul>
-            <li>Step 1: <em>Don't Give Up!</em></li>
-            <li>You probably ran into a problem someone else is having. Please feel free to
-            send an email out with a detailed description of your problem. Someone will
-            likely be able to help. You should include what operating system you are using,
-            and which steps have been completed successfully.</li>
-            </ul>
+            <li>
+            <p><strong>I&#8217;m stuck.</strong> - Step 1: <em>Don&#8217;t Give Up!</em> - You probably ran into a problem someone else is having. Please feel free to send an email out with a detailed description of your problem. Someone will likely be able to help. You should include what operating system you are using, and which steps have been completed successfully.</p>
             </li>
-            <li><p><strong>I found an error/typo/omission in this guide.</strong></p>
             
-            <ul>
-            <li>Please email <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a> with your keen
-            observation. If you feel really adventurous, you can <a href="https://github.com/CWDG/cwdg.github.com">submit a pull request
-            with a fix or improvement</a>.</li>
-            </ul>
+            <li>
+            <p><strong>I found an error/typo/omission in this guide.</strong> - Please email <a href='mailto:cwdgosu@gmail.com'>cwdgosu@gmail.com</a> with your keen observation. If you feel really adventurous, you can <a href='https://github.com/CWDG/cwdg.github.com'>submit a pull request with a fix or improvement</a>.</p>
             </li>
             </ul>
           </div>
@@ -300,20 +247,15 @@
         <div class='section why'>
           <h2>But why are we installing XYZ program?</h2>
           <div class='content'>
-            <p>There are many options for how to create web applications. We have chosen a few
-            technologies to use so everyone is using similar software. We think the benefits
-            of this will become apparent as people begin creating their own projects. Our
-            club members will become experts in these tools capable of actually helping each
-            other.</p>
+            <p>There are many options for how to create web applications. We have chosen a few technologies to use so everyone is using similar software. We think the benefits of this will become apparent as people begin creating their own projects. Our club members will become experts in these tools capable of actually helping each other.</p>
             
-            <p>If you have questions about specific technology choices, please feel free to email
-            the mailing list or <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a>.</p>
+            <p>If you have questions about specific technology choices, please feel free to email the mailing list or <a href='mailto:cwdgosu@gmail.com'>cwdgosu@gmail.com</a>.</p>
           </div>
         </div>
       </div>
     </div>
     <div id='footer'>
-      <p>Email <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a> for more information.</p>
+      <p>Email <a href='mailto:cwdgosu@gmail.com'>cwdgosu@gmail.com</a> for more information.</p>
     </div>
   </body>
 </html>
