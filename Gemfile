@@ -2,6 +2,8 @@
 source "http://rubygems.org"
 
 gem "compass"
+gem "pry"
+gem "rake"
 
 group :development do
   gem "haml"
