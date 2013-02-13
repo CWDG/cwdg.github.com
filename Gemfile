@@ -12,5 +12,6 @@ end
 
 group :production do
   gem "haml-contrib"
+  gem "redcarpet"
 end
 
