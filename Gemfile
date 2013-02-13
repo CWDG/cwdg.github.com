@@ -11,7 +11,7 @@ group :development do
 end
 
 group :production do
-  gem "bluecloth"
-  gem "maruku"
+  gem "haml-contrib"
+  gem "redcarpet"
 end
 
