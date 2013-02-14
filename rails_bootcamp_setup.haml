@@ -70,12 +70,12 @@
 
               > curl -s https://toolbelt.heroku.com/install.sh | sh  
               > PATH="/usr/local/heroku/bin:$PATH"  
-              > echo 'PATH="/usr/local/heroku/bin:$PATH"'  
+              > echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.profile 
 
               zsh users need to run the command below: (if you don't know what
               it is you aren't using it)
 
-              > echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.profile 
+              > echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.zprofile 
 
               This requires root/admin on the machine you're working on. If you
               don't have it, instead
