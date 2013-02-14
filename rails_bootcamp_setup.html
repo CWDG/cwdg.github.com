@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>&lt;CWDG/&gt; Web Ninjas Unite</title>
+    <link href='favicon.ico' rel='icon' type='image/x-icon'>
+    <link href='css/screen.css' media='screen, projection' rel='stylesheet' type='text/css'>
+    <link href='css/print.css' media='print' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  </head>
+  <body class='bp'>
+    <div id='header'>
+      <ul class='relevant-links'>
+        <li class='last'>
+          <a class='button' href='http://groups.google.com/group/cwdgosu' target='blank'>Mailing List Archives</a>
+          <li>
+            <a class='button' href='http://www.twitter.com/cwdgosu' target='blank'>Twitter</a>
+          </li>
+          <li>
+            <a class='button' href='http://www.facebook.com/groups/cwdgosu/' target='blank'>Facebook</a>
+          </li>
+          <li>
+            <a class='button' href='https://github.com/CWDG' target='blank'>GitHub</a>
+          </li>
+          <li>
+            <a class='button' href='irc.html' target='blank'>Chat on IRC</a>
+          </li>
+          <li class='first'>
+            <a class='button' href='http://go.osu.edu/cwdglist' target='blank'>Join the Mailing List</a>
+          </li>
+        </li>
+      </ul>
+      <a class='banner' href='/'>
+        <h1>
+          <span class='tag'>&lt;</span>
+          Collegiate Web Developers Group
+          <span class='slash'>/</span>
+          <span class='tag'>&gt;</span>
+        </h1>
+      </a>
+    </div>
+    <div id='container'>
+      <div id='content'>
+        <div class='section goal'>
+          <h2>Rails Bootcamp Setup</h2>
+          <div class='content'>
+            <p>Before performing these setps, you need to first <a href="dev_ruby_setup.html">get set up with
+            RVM and ruby</a> (you can skip steps 5 through 7). </p>
+            
+            <p>In addition to setting up RVM and Ruby, you&#39;ll need to install Rails itself and
+            get a <a href="http://www.heroku.com/">Heroku</a> account, as that&#39;s where you&#39;ll be
+            uploading your rails site for testing.</p>
+          </div>
+        </div>
+        <div class='section rails'>
+          <h2>1. Install Rails</h2>
+          <div class='content'>
+            <p>Rails is fairly easy to install. In fact, it&#39;s exactly like installing Sinatra.
+            Simply run</p>
+            
+            <blockquote>
+            <pre><code>gem install rails -v=3.2.12&#x000A;</code></pre>
+            </blockquote>
+            
+            <p>Once this completes, you should be all set.</p>
+          </div>
+        </div>
+        <div class='section heroku'>
+          <h2>2. Sign up for Heroku</h2>
+          <div class='content'>
+            <p><a href="http://www.heroku.com/">Heroku</a> is a service for hosting salable web
+            applications. We&#39;ll be hosting our rails apps here since it&#39;s super easy to
+            deploy to and free for what we&#39;ll be using it for.</p>
+            
+            <p>Go <a href="https://api.heroku.com/signup">sign up</a> for an account.</p>
+            
+            <p>In the past you&#39;d have to install the heroku rubygem, but now
+            Heroku recommends you donwload and isntall the Heroku toolkit
+            from the site.</p>
+            
+            <blockquote>
+            <p>curl -s https://toolbelt.heroku.com/install.sh | sh<br>
+            PATH=&quot;/usr/local/heroku/bin:$PATH&quot;<br>
+            echo &#39;PATH=&quot;/usr/local/heroku/bin:$PATH&quot;&#39;  </p>
+            </blockquote>
+            
+            <p>zsh users need to run the command below: (if you don&#39;t know what
+            it is you aren&#39;t using it)</p>
+            
+            <blockquote>
+            <p>echo &#39;PATH=&quot;/usr/local/heroku/bin:$PATH&quot;&#39; &gt;&gt; ~/.profile </p>
+            </blockquote>
+            
+            <p>This requires root/admin on the machine you&#39;re working on. If you
+            don&#39;t have it, instead</p>
+            
+            <blockquote>
+            <p>gem install heroku</p>
+            </blockquote>
+            
+            <p>Now you should go ahead and log in.</p>
+            
+            <blockquote>
+            <p>heroku login</p>
+            </blockquote>
+            
+            <p>Answer yes if it asks about a key.</p>
+            
+            <p>You should be all set!</p>
+          </div>
+        </div>
+        <div class='section faq'>
+          <h2>FAQ</h2>
+          <div class='content'>
+            <ul>
+            <li><p><strong>What do you mean by &quot;run this command&quot;?</strong></p>
+            
+            <ul>
+            <li>In your terminal application, type or paste the code snippet and hit enter.</li>
+            </ul></li>
+            <li><p><strong>I&#39;m typing my password, but nothing shows up.</strong></p>
+            
+            <ul>
+            <li>Don&#39;t worry! It is still working, it is just hiding your password from
+            anyone who might be standing behind you. When you are finished, just hit enter.</li>
+            </ul></li>
+            <li><p><strong>Zlib isn&#39;t installed?</strong></p>
+            
+            <ul>
+            <li>We noticed that some people using Ubuntu had issues installing Sinatra because
+            of a missing dependency. Follow <a href="https://rvm.io/packages/zlib/">these instructions</a>
+            in order to get your gem installs to work.</li>
+            </ul></li>
+            <li><p><strong>I was installing XYZ, it says it failed. What should I do?</strong></p>
+            
+            <ul>
+            <li>Try thinking of your problem in its general terms, then typing them into Google.
+            If you have a specific error message, try that.
+            <a href="http://stackoverflow.com/">Stack Overflow</a> is a pretty good resource for
+            common problems.</li>
+            </ul></li>
+            <li><p><strong>Which text editor should I use?</strong></p>
+            
+            <ul>
+            <li>It doesn&#39;t really matter. If someone tells you to use Emacs or Vim, they mean
+            well, but are likely just going to confuse you. You might want to try 
+            <a href="http://projects.gnome.org/gedit/">Gedit</a> or
+            <a href="http://www.sublimetext.com/2">Sublime Text 2</a>.</li>
+            </ul></li>
+            <li><p><strong>I&#39;m stuck.</strong></p>
+            
+            <ul>
+            <li>Step 1: <em>Don&#39;t Give Up!</em></li>
+            <li>You probably ran into a problem someone else is having. Please feel free to
+            send an email out with a detailed description of your problem. Someone will
+            likely be able to help. You should include what operating system you are using,
+            and which steps have been completed successfully.</li>
+            </ul></li>
+            <li><p><strong>I found an error/typo/omission in this guide.</strong></p>
+            
+            <ul>
+            <li>Please email <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a> with your keen
+            observation. If you feel really adventurous, you can <a href="https://github.com/CWDG/cwdg.github.com">submit a pull request
+            with a fix or improvement</a>.</li>
+            </ul></li>
+            </ul>
+          </div>
+        </div>
+        <div class='section why'>
+          <h2>But why are we installing XYZ program?</h2>
+          <div class='content'>
+            <p>There are many options for how to create web applications. We have chosen a few
+            technologies to use so everyone is using similar software. We think the benefits
+            of this will become apparent as people begin creating their own projects. Our
+            club members will become experts in these tools capable of actually helping each
+            other.</p>
+            
+            <p>If you have questions about specific technology choices, please feel free to email
+            the mailing list or <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='footer'>
+      <p>Email <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a> for more information.</p>
+    </div>
+  </body>
+</html>
