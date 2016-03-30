@@ -45,6 +45,14 @@ Go to [http://localhost:4567](http://localhost:4567)
 
 BOOM!! Done.
 
+## Updating Meetings and Resources
+
+The meetings and resources are kept in [Middleman "Local Data" files](https://middlemanapp.com/advanced/data_files/). The data is stored and YAML, and should be fairly intuitive to work with. You can find the data files in the `data` directory. If you have commit access to the CWDG/cwdg.github.io repo, you can directly [update the resources](https://github.com/CWDG/cwdg.github.io/edit/source/data/resources.yml) or [update the schedule](https://github.com/CWDG/cwdg.github.io/edit/source/data/schedule.yml) on GitHub.
+
+## Deployment
+
+Since this is a static site, deployment is pretty straightforward. In order to deploy the site, you can simply run `rake publish`, which will push the compiled site to the `master` branch. To be able to deploy to http://cwdg.github.io, you will need permissions to push to `master` on CWDG/cwdg.github.io.
+
 ## Contributing
 
 This is meant to be an application that our group should enjoy and contribute to.
