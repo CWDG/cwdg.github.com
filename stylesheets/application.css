@@ -1,0 +1,1071 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, _normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, _normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, _normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, _normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, _normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, _normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, _normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, _normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, _normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, _normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, _normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, _normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, _normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, _normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, _normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, _normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, _normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, _normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, _normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, _normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, _normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, _normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, _normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, _normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, _normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, _normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, _normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, _normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, _normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, _normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, _normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, _normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, _normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, _normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, _normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, _normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, _normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, _normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, _normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 424, _normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*== Use in development only! ==*/
+/*==============================*/
+/* line 4, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("/fonts/proxima_nova_bold-webfont.eot");
+  src: url("/fonts/assets/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova_bold-webfont.woff") format("woff"), url("/fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("/fonts/proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("/fonts/proxima_nova_reg-webfont.eot");
+  src: url("/fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova_reg-webfont.woff") format("woff"), url("/fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("/fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'proxima_novablack';
+  src: url("/fonts/proxima_nova_black-webfont.eot");
+  src: url("/fonts/proxima_nova_black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova_black-webfont.woff") format("woff"), url("/fonts/proxima_nova_black-webfont.ttf") format("truetype"), url("/fonts/proxima_nova_black-webfont.svg#proxima_novablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@-webkit-keyframes drop {
+  0% {
+    -webkit-transform: translateY(-50px);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translateY(-50px);
+    opacity: 0; } }
+@-moz-keyframes drop {
+  0% {
+    -moz-transform: translateY(-50px);
+    opacity: 0; }
+  40% {
+    -moz-transform: translateY(-50px);
+    opacity: 0; } }
+@keyframes drop {
+  0% {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; } }
+@-webkit-keyframes scale-in {
+  0% {
+    -webkit-transform: scale(0); }
+  80% {
+    -webkit-transform: scale(0); }
+  90% {
+    -webkit-transform: scale(1.1); } }
+@-moz-keyframes scale-in {
+  0% {
+    -moz-transform: scale(0); }
+  80% {
+    -moz-transform: scale(0); }
+  90% {
+    -moz-transform: scale(1.1); } }
+@keyframes scale-in {
+  0% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
+  80% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
+  90% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); } }
+/* line 1, _components.scss */
+.button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "proxima_nova_rgbold";
+  font-size: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 4px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 17px 24px 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: scale-in 2s 1;
+  -moz-animation: scale-in 2s 1;
+  animation: scale-in 2s 1; }
+  /* line 19, _components.scss */
+  .button:hover {
+    color: #a76262;
+    background: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.84); }
+
+/* line 1, style.scss */
+html {
+  height: 100%; }
+
+/* line 5, style.scss */
+body {
+  font-family: "proxima_nova_rgregular", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #333;
+  height: 100%; }
+
+/* line 13, style.scss */
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 150px; }
+
+/* line 19, style.scss */
+a {
+  font-family: "proxima_nova_rgbold";
+  font-weight: normal;
+  text-decoration: none; }
+
+/* line 25, style.scss */
+h1 {
+  font-size: 40px;
+  font-weight: normal; }
+
+/* line 30, style.scss */
+h2 {
+  color: white;
+  font-family: "proxima_nova_rgbold";
+  font-size: 24px;
+  margin-bottom: 20px; }
+
+/* line 37, style.scss */
+h3 {
+  font-size: 20px;
+  font-family: "proxima_nova_rgbold"; }
+
+/* line 42, style.scss */
+h4 {
+  font-size: 15px;
+  padding: 0;
+  margin: 0; }
+
+/* line 48, style.scss */
+header#main-header {
+  width: 100%;
+  background: url("/images/header.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-height: 400px;
+  padding-bottom: 8%;
+  margin-bottom: 20px; }
+  /* line 57, style.scss */
+  header#main-header .introduction > h1 {
+    color: white; }
+
+/* line 62, style.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  /* line 68, style.scss */
+  footer a {
+    color: #a76262; }
+  /* line 72, style.scss */
+  footer p {
+    color: #333333; }
+
+/* line 77, style.scss */
+p {
+  line-height: 1.2;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+/* line 83, style.scss */
+section {
+  width: 100%;
+  padding-top: 30px; }
+  /* line 87, style.scss */
+  section a {
+    color: #A76262; }
+  /* line 91, style.scss */
+  section.dark {
+    background-color: #333333;
+    color: white; }
+    /* line 95, style.scss */
+    section.dark p {
+      color: white; }
+  /* line 101, style.scss */
+  section.red a {
+    color: white; }
+
+/* line 107, style.scss */
+#meeting-and-navigation {
+  padding-top: 0px;
+  padding-bottom: 15px; }
+
+/* line 112, style.scss */
+.catch-phrase {
+  -webkit-animation: drop 2s 1;
+  -moz-animation: drop 2s 1;
+  animation: drop 2s 1; }
+
+/* line 116, style.scss */
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 120, style.scss */
+#getting-started {
+  padding-bottom: 40px;
+  margin-bottom: 20px; }
+  /* line 124, style.scss */
+  #getting-started p:last-child {
+    padding-top: 20px;
+    margin-bottom: 0px; }
+  /* line 129, style.scss */
+  #getting-started p {
+    text-align: justify; }
+
+/* line 134, style.scss */
+.info-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+  .info-column:last-child {
+    margin-right: 0; }
+  /* line 78, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+  .info-column:nth-child(3n) {
+    margin-right: 0; }
+  /* line 83, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+  .info-column:nth-child(3n+1) {
+    clear: left; }
+  /* line 138, style.scss */
+  .info-column .mega-octicon {
+    margin-left: 45%; }
+  /* line 142, style.scss */
+  .info-column h2 {
+    text-align: center; }
+
+/* line 147, style.scss */
+.introduction {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  text-align: center; }
+  /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+  .introduction:last-child {
+    margin-right: 0; }
+  /* line 152, style.scss */
+  .introduction h1 {
+    margin-top: 0px; }
+
+/* line 157, style.scss */
+.logo-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+  .logo-container:last-child {
+    margin-right: 0; }
+  /* line 160, style.scss */
+  .logo-container h1 {
+    margin: 0; }
+  /* line 164, style.scss */
+  .logo-container .logo {
+    font-size: 30px;
+    text-align: center; }
+    /* line 168, style.scss */
+    .logo-container .logo span {
+      position: relative;
+      font-size: 20px;
+      top: -3px; }
+
+/* line 177, style.scss */
+.nav {
+  font-family: "proxima_nova_rgbold";
+  padding-bottom: 40px;
+  text-align: center;
+  border-bottom: 2px solid #eee2e2;
+  font-size: 18px; }
+  /* line 184, style.scss */
+  .nav .mega-octicon {
+    font-size: 18px; }
+  /* line 188, style.scss */
+  .nav .nav-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .nav .nav-item:last-child {
+      margin-right: 0; }
+    /* line 78, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+    .nav .nav-item:nth-child(3n) {
+      margin-right: 0; }
+    /* line 83, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+    .nav .nav-item:nth-child(3n+1) {
+      clear: left; }
+    /* line 192, style.scss */
+    .nav .nav-item a {
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      color: #333333;
+      opacity: .4; }
+      /* line 196, style.scss */
+      .nav .nav-item a:hover {
+        opacity: 1; }
+
+/* line 203, style.scss */
+#next-meeting {
+  font-size: 40px; }
+
+/* line 207, style.scss */
+#next-meeting-date {
+  font-family: "proxima_nova_rgbold"; }
+
+/* line 211, style.scss */
+.presentation {
+  font-size: 20px;
+  margin-bottom: 15px; }
+  /* line 215, style.scss */
+  .presentation .mega-octicon {
+    font-size: 20px;
+    margin-right: 18px; }
+  /* line 220, style.scss */
+  .presentation span {
+    margin-bottom: 20px; }
+
+/* line 225, style.scss */
+.user-auth-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding-top: 2px;
+  font-size: 14px;
+  text-transform: uppercase; }
+  /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+  .user-auth-container:last-child {
+    margin-right: 0; }
+  /* line 231, style.scss */
+  .user-auth-container a {
+    float: right; }
+  /* line 235, style.scss */
+  .user-auth-container:hover > a > .mega-octicon {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+/* line 240, style.scss */
+.sponsor-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+  .sponsor-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 243, style.scss */
+  .sponsor-container .sponsor-row {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .sponsor-container .sponsor-row:last-child {
+      margin-right: 0; }
+    /* line 245, style.scss */
+    .sponsor-container .sponsor-row .sponsor-list {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+      .sponsor-container .sponsor-row .sponsor-list:last-child {
+        margin-right: 0; }
+      /* line 248, style.scss */
+      .sponsor-container .sponsor-row .sponsor-list li {
+        list-style-type: none;
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 100%; }
+        /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+        .sponsor-container .sponsor-row .sponsor-list li:last-child {
+          margin-right: 0; }
+        /* line 78, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+        .sponsor-container .sponsor-row .sponsor-list li:nth-child(2n) {
+          margin-right: 0; }
+        /* line 83, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+        .sponsor-container .sponsor-row .sponsor-list li:nth-child(2n+1) {
+          clear: left; }
+        @media screen and (max-width: 480px) {
+          /* line 248, style.scss */
+          .sponsor-container .sponsor-row .sponsor-list li {
+            float: left;
+            display: block;
+            margin-right: 4.82916%;
+            width: 100%; }
+            /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+            .sponsor-container .sponsor-row .sponsor-list li:last-child {
+              margin-right: 0; }
+            /* line 78, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+            .sponsor-container .sponsor-row .sponsor-list li:nth-child(1n) {
+              margin-right: 0; }
+            /* line 83, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+            .sponsor-container .sponsor-row .sponsor-list li:nth-child(1n+1) {
+              clear: left; } }
+
+/* line 262, style.scss */
+.user-auth-navbar {
+  width: 100%;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 0 12px;
+  margin-bottom: 80px; }
+  /* line 270, style.scss */
+  .user-auth-navbar a {
+    color: white; }
+
+/* line 275, style.scss */
+.cwdg-sponsor-logo {
+  height: 30px; }
+
+/* line 279, style.scss */
+.meetings,
+.resources,
+.officers {
+  padding-top: 0;
+  padding-bottom: 20px;
+  color: #333333; }
+  /* line 286, style.scss */
+  .meetings h2,
+  .resources h2,
+  .officers h2 {
+    font-size: 35px;
+    text-align: center;
+    color: inherit; }
+  /* line 292, style.scss */
+  .meetings li,
+  .resources li,
+  .officers li {
+    font-size: 20px; }
+
+/* line 298, style.scss */
+.meetings ul {
+  padding-left: 0; }
+  /* line 301, style.scss */
+  .meetings ul li {
+    list-style: none;
+    padding-bottom: 15px; }
+
+/* line 308, style.scss */
+.officers {
+  display: block; }
+  /* line 20, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bourbon-4.2.6/app/assets/stylesheets/addons/_clearfix.scss */
+  .officers::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 311, style.scss */
+  .officers .officer-panel {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    float: left; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .officers .officer-panel:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 311, style.scss */
+      .officers .officer-panel {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+        .officers .officer-panel:last-child {
+          margin-right: 0; }
+        /* line 78, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+        .officers .officer-panel:nth-child(2n) {
+          margin-right: 0; }
+        /* line 83, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_omega.scss */
+        .officers .officer-panel:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 480px) {
+      /* line 311, style.scss */
+      .officers .officer-panel {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+        .officers .officer-panel:last-child {
+          margin-right: 0; } }
+    /* line 326, style.scss */
+    .officers .officer-panel img {
+      width: 100%; }
+
+@media screen and (max-width: 768px) {
+  /* line 1, _media_queries.scss */
+  header {
+    padding-bottom: 46px; }
+    /* line 4, _media_queries.scss */
+    header h1 {
+      font-size: 34px; } }
+
+@media screen and (max-width: 768px) {
+  /* line 10, _media_queries.scss */
+  .button {
+    margin-bottom: 0px; } }
+@media screen and (max-width: 480px) {
+  /* line 10, _media_queries.scss */
+  .button {
+    margin-bottom: 0px; } }
+
+@media screen and (max-width: 768px) {
+  /* line 20, _media_queries.scss */
+  .introduction {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 74.10533%;
+    margin-left: 12.94733%; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .introduction:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 480px) {
+  /* line 20, _media_queries.scss */
+  .introduction {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .introduction:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  /* line 32, _media_queries.scss */
+  .last-updated {
+    display: none; } }
+@media screen and (max-width: 480px) {
+  /* line 32, _media_queries.scss */
+  .last-updated {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  /* line 44, _media_queries.scss */
+  .logo-container span {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  /* line 50, _media_queries.scss */
+  .info-column {
+    width: 100%;
+    text-align: justify; } }
+@media screen and (max-width: 768px) {
+  /* line 50, _media_queries.scss */
+  .info-column {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  /* line 62, _media_queries.scss */
+  .nav-item .about-large {
+    display: none; }
+  /* line 66, _media_queries.scss */
+  .nav-item .about-mobile {
+    display: inline; } }
+@media screen and (max-width: 480px) {
+  /* line 72, _media_queries.scss */
+  .nav-item a > span.nav-description {
+    display: none; }
+  /* line 76, _media_queries.scss */
+  .nav-item .mega-octicon {
+    font-size: 28px; } }
+
+@media screen and (max-width: 480px) {
+  /* line 82, _media_queries.scss */
+  .next-meeting {
+    text-align: center; } }
+@media screen and (max-width: 768px) {
+  /* line 82, _media_queries.scss */
+  .next-meeting {
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  /* line 91, _media_queries.scss */
+  .user-auth-container {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 35.26334%; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .user-auth-container:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 480px) {
+  /* line 91, _media_queries.scss */
+  .user-auth-container {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%; }
+    /* line 89, ../../../../../.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/neat-1.7.3/app/assets/stylesheets/grid/_span-columns.scss */
+    .user-auth-container:last-child {
+      margin-right: 0; } }
+@media screen and (max-width: 480px) {
+  /* line 100, _media_queries.scss */
+  .user-auth-container .signin-text {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  /* line 107, _media_queries.scss */
+  .user-auth-navbar {
+    margin-bottom: 32px; } }
+@media screen and (max-width: 480px) {
+  /* line 107, _media_queries.scss */
+  .user-auth-navbar {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 768px) {
+  /* line 117, _media_queries.scss */
+  .info-column,
+  #getting-started,
+  .officer-blocks,
+  ul.meeting-list,
+  .resource-list {
+    padding-left: 10px;
+    padding-right: 10px; } }
