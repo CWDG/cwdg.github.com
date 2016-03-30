@@ -1,0 +1,34 @@
+<header id="main-header">
+  <%= partial 'user_auth_navbar' %>
+  <div class="container">
+    <div class="introduction">
+      <h1 class="catch-phrase">Just a bunch of college students building awesome stuff</h1>
+      <%= link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button" %>
+    </div>
+  </div>
+</header>
+<section id="meeting-and-navigation">
+  <div class="container">
+    <div class="nav">
+      <div class="nav-item">
+        <% link_to '/meetings.html' do %>
+          <%= mega_octicon('calendar') %>
+          <span class="nav-description">Meetings</span>
+        <% end %>
+      </div>
+
+      <div class="nav-item">
+        <% link_to '/' do %>
+          <%= mega_octicon('organization') %>
+          <span class="nav-description">About</span>
+        <% end %>
+      </div>
+
+      <div class="nav-item">
+        <% link_to '/resources.html' do %>
+          <%= mega_octicon('book') %>
+          <span class="nav-description">Resources</span>
+        <% end %>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,40 @@
+# The ouput of all these installation steps is noisy. With this utility
+# the progress report is nice and concise.
+function install {
+    echo "Installing $1"
+    shift
+    apt-get -y install "$@" >/dev/null 2>&1
+}
+
+install 'development tools' build-essential
+install curl curl
+install Git git
+install 'Nokogiri dependencies' libxml2 libxml2-dev libxslt1-dev
+install 'ExecJS runtime' nodejs
+install ZSH zsh
+
+# Install RVM and Ruby
+if ! hash rvm 2> /dev/null; then
+  # Install PGP key
+  command curl -sSL https://rvm.io/mpapis.asc | sudo gpg2 --import -
+
+  # Download and run RVM script
+  \curl -sSL https://get.rvm.io > rvm.sh
+  sudo -u vagrant bash rvm.sh
+  rm rvm.sh
+
+  # Install ruby 2.3.0
+  source /home/vagrant/.rvm/scripts/rvm
+  rvm install 2.3.0
+fi
+
+echo "Installing Bundler"
+gem install bundler
+
+# Needed for docs generation.
+update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
+
+# Setup ZSH for the sane
+chsh -s /bin/zsh
+
+echo 'All set, rock on!'

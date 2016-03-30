@@ -1,0 +1,30 @@
+General:
+  Pair Columbus: "http://paircolumbus.org/"
+  Codecademy: "http://codecademy.com/"
+  Code School: "http://codeschool.com/"
+  Treehouse: "https://teamtreehouse.com/"
+
+Git:
+  Git website: "https://git-scm.com/"
+  GitHub Desktop GUI Client: "https://desktop.github.com/"
+  Try Git: "https://try.github.io/"
+  Git-It: "https://github.com/paircolumbus/Git-It"
+  git - the simple guide: "https://rogerdudler.github.io/git-guide/"
+
+
+HTML:
+  Playground at Mozilla Thimble: "https://thimble.mozilla.org/"
+  Tutorial on Codecademy: "https://www.codecademy.com/track/web/resume"
+  Tutorial on HTML dog: "https://www.codecademy.com/track/web/resume"
+  Documentation on MDN: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+
+CSS:
+  Tutorial on HTML dog: "http://www.htmldog.com/guides/css/beginner/"
+  General Goodness at CSS Tricks: "https://css-tricks.com/"
+  Documentation on MDN: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+
+Ruby:
+  Try Ruby: "http://tryruby.org/"
+  Tutorial on Codecademy: "https://www.codecademy.com/tracks/ruby"
+  Ruby Refresher: "https://github.com/paircolumbus/RubyRefresher"
+  Ruby Koans: "http://rubykoans.com/"

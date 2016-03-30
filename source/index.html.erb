@@ -1,0 +1,77 @@
+  <div class="container next-meeting">
+    <h1>
+      <span id="next-meeting" class="mega-octicon octicon-calendar"></span>
+      Next Meeting: <span id="next-meeting-date">???</span>
+    </h1>
+    <div class="presentation">
+      <span><%= mega_octicon('clock') %> 7:00 PM <span>-</span></span>
+      <span><span id="meeting-topic">???</span> with <span id="meeting-speaker">???</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="info-column">
+      <%= mega_octicon('organization') %>
+      <h2>WHO WE ARE</h2>
+      <p>The Collegiate Web Developers Group is a collection of students, graduates and alumni at the Ohio State University who are making an effort to improve the web. We work hard to make ourselves, and others, better developers.</p>
+    </div>
+
+    <div class="info-column">
+      <%= mega_octicon('person') %>
+      <h2>HOW CAN I JOIN?</h2>
+      <p>If you are an OSU student who wants to get involved in web development this club is for you. It doesn't matter if you are an experienced developer or a beginner. CWDG offers something for all skill levels.</p>
+    </div>
+
+    <div class="info-column">
+      <%= mega_octicon('checklist') %>
+      <h2>MEETING TIMES</h2>
+      <p>Meeting times are every Tuesday at 7:00pm in Dreese Labs, Room 260. These meetings entail a talk, possibly from a guest speaker, and working on projects. <a href="http://eepurl.com/GBJFv">Join the mailing list</a> to see what is coming up.</p>
+    </div>
+  </div>
+</section>
+
+<section class="officers">
+  <div class="container">
+    <section class="officer-blocks">
+      <h2>Officers</h2>
+      <div class="officers">
+        <div class="officer-panel">
+          <h3>President:<br/>Jonathan Arnett</h3>
+          <%= image_tag 'officers/jonathan_arnett.jpg' %>
+        </div>
+        <div class="officer-panel">
+          <h3>Vice President:<br/>Alex Fuhr</h3>
+          <%= image_tag 'officers/alex_fuhr.jpg' %>
+        </div>
+        <div class="officer-panel">
+          <h3>Treasurer:<br/>Emma Rastatter</h3>
+          <%= image_tag 'officers/emma_rastatter.jpg' %>
+        </div>
+        <div class="officer-panel">
+          <h3>Secretary:<br/>Marwan Nakhaleh</h3>
+          <%= image_tag 'officers/marwan_nakhaleh.jpg' %>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section id='getting-started' class="dark red" style="background: <%= geo_pattern_image('getting started', color: '#7A3332') %>">
+  <div class="container">
+    <h2>How do I get started?</h2>
+
+    <p>
+      The best way to get started is to show up to our meetings. Also, you should <a href="http://eepurl.com/GBJFv">join the mailing list</a> to stay up to date on meetings. Before you attend your first meeting, you may want to familiarize yourself with the <a href="http://ruby-lang.org">Ruby Programming Language</a> or <a href="http://nodejs.org">Node.js</a>. We also maintain <%= link_to "a list of resources", "/resources.html" %> to help new members get up to speed.
+    </p>
+
+    <p>
+      You can connect with the group by joining the IRC channel <a href="https://webchat.freenode.net/?channels=cwdg">#cwdg</a> on Freenode. Feel free to ask questions and join in discussions. You can also connect with us by <a href="https://twitter.com/cwdgosu">following the club on Twitter</a>.
+    </p>
+
+    <p>
+    <a href="http://eepurl.com/GBJFv" class="button">JOIN THE MAILING LIST</a>
+    </p>
+  </div>
+</section>

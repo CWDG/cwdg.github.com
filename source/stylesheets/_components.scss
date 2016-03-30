@@ -1,0 +1,24 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  height: 60px;
+  margin:  0 auto;
+  text-align: center;
+  font-family: $bold_text;
+  font-size: 20px;
+  color: white;
+  background: rgba(white, .1);
+  border: 4px solid rgba(white, .14);
+  border-radius: 8px;
+  padding: 17px 24px 0;
+  @include transition(all .4s);
+  @include animation(scale-in 2s 1);
+
+  &:hover {
+    color: $link;
+    background: rgba(white, .8);
+    border: 4px solid rgba(white, .84);
+  }
+}
