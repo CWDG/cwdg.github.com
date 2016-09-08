@@ -8,38 +8,59 @@ This is our latest web application for our group in order for us to manage our g
 
 ## Setup
 
-### Before you run this application
+### Mac OSX / Linux
+
+* Clone the application
+
+        git clone https://github.com/CWDG/cwdg.github.io
+
+* Enter the app's directory
+
+        cd cwdg.github.io
+
+* Install the dependencies
+
+        bundle install
+
+Done!
+
+### Windows
 
 * Install [VirtualBox](https://www.virtualbox.org/)
 * Install [Vagrant](https://www.vagrantup.com/downloads.html)
 * Setup Vagrant
-    - `vagrant plugin install vagrant-vbguest`
 
-### Once you have the application cloned
+        vagrant plugin install vagrant-vbguest
 
-* Clone it
-    - `git clone https://github.com/CWDG/cwdg-website.git`
-    - `cd cwdg-website`
-* Fire up vagrant
-    - `vagrant up`
+* Clone the application
+
+        git clone https://github.com/CWDG/cwdg-website.git
+
+* Enter the app's directory
+
+        cd cwdg-website
+
+* Fire up vagrant (this will take a while the first time)
+
+        vagrant up
+
 * SSH into the virtual machine
-    - `vagrant ssh`
-* Setup the CWDG app
-    - `cd cwdg-website`
-    - `bundle install`
 
-## Run the app
+        vagrant ssh
 
-Make sure that you are `ssh`ed into your vagrant machine.
+* Enter the cwdg-website directory in the virtual machine
 
-```
-vagrant ssh
+        cd cwdg-website
 
-cd cwdg-website
+* Install the dependencies
 
-# Run the server
-bundle exec middleman server
-```
+        bundle install
+
+Done!
+
+## Running the application
+
+    bundle exec middleman server
 
 Go to [http://localhost:4567](http://localhost:4567)
 
