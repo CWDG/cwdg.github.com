@@ -59,6 +59,7 @@ GEM
     i18n (0.7.0)
     json (1.8.3)
     kramdown (1.9.0)
+    libv8 (3.16.14.15)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
@@ -129,7 +130,11 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    ref (2.0.0)
     sass (3.4.21)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -152,6 +157,7 @@ DEPENDENCIES
   middleman-gh-pages
   middleman-livereload
   neat
+  therubyracer
   tzinfo-data
   wdm (~> 0.1.0)
 

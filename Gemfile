@@ -22,3 +22,5 @@ gem 'geo_pattern'
 
 # Easy deploys
 gem 'middleman-gh-pages'
+
+gem 'therubyracer'
