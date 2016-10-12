@@ -1,61 +1,4 @@
 -
-  date: 2016-01-12
-  topic: Welcome back and Auxiliary Election
-  speaker: Jonathan Arnett
--
-  date: 2016-01-19
-  topic: Neural networks and handwriting recognition
-  speaker: John Simerlink
--
-  date: 2016-01-26
-  topic: Meteor
-  speaker: Alex Fuhr
--
-  date: 2016-02-02
-  topic: Twitter for Dogs in 30 Minutes or Less
-  speaker: Jonathan Arnett
--
-  date: 2016-02-09
-  topic: jQuery
-  speaker: Marwan Nakhaleh
--
-  date: 2016-02-16
-  topic: Git and GitHub
-  speaker: Mark Tareshawty
--
-  date: 2016-02-23
-  topic: ???
-  speaker: ???
--
-  date: 2016-03-01
-  topic: Elections
-  speaker: Jonathan Arnett
--
-  date: 2016-03-08
-  topic: ???
-  speaker: ???
--
-  date: 2016-03-22
-  topic: Web Technology Comparison
-  speaker: Rob Kinyon
--
-  date: 2016-03-29
-  topic: ???
-  speaker: ???
--
-  date: 2016-04-05
-  topic: ???
-  speaker: ???
--
-  date: 2016-04-12
-  topic: Build Tools
-  speaker: John Simerlink
--
-  date: 2016-04-19
-  topic: CommonJS and AMD
-  speaker: John Simerlink
--
-  date: 2016-10-18
   topic: tentative
   speaker: N/A
 -
@@ -66,3 +9,7 @@
   date: 2016-11-1 
   topic: tentative
   speaker: N/A
+-
+  date: 2016-11-17
+  topic: Oktoberfest
+  speaker: 
