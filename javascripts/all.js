@@ -31,7 +31,7 @@ var toLocalTime = function(date) {
 
 var updateMeeting = function() {
     // Get all meetings
-    var meetings = [{"date":"2016-10-18","topic":"React (JavaScript Framework)","speaker":"Wes from CoverMyMeds"},{"date":"2016-10-25","topic":"Backend  Stuff","speaker":"Paul Tela (subject to change)"},{"date":"2016-11-01","topic":"tentative","speaker":"N/A"},{"date":"2016-11-17","topic":"Oktoberfest","speaker":"Glowing Pumpkin"}];
+    var meetings = [{"date":"2016-10-18","topic":"React (JavaScript Framework)","speaker":"Wes from CoverMyMeds"},{"date":"2016-10-25","topic":"Backend Stuff","speaker":"Paul Tela (subject to change)"},{"date":"2016-11-01","topic":"tentative","speaker":"N/A"},{"date":"2016-11-17","topic":"Oktoberfest","speaker":"Glowing Pumpkin"}];
     // Find the next meeting whose datetime, based on the end-of-day, is greater than the current datetime
     var nextMeeting = meetings.find(function(e) {
         return toLocalTime(e.date + "T23:59:59") >= new Date();
