@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collegiate Web Developers</title>
+    <link rel="icon" href="favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimal-ui">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.css" rel="stylesheet" />
+    <%= stylesheet_link_tag :application %>
+    <%= javascript_include_tag :all %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <%= partial "header" %>
+      <%= yield %>
+      <%= partial "footer" %>
+    </div>
+  </body>
+</html>

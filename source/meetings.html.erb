@@ -1,0 +1,13 @@
+<section class="meetings">
+  <div class="container">
+    <h2>Meetings</h2>
+    <ul class="meeting-list">
+      <% data.schedule.each do |meeting| %>
+        <li>
+          <h3 class="meeting-date"><%= formatted_date(meeting["date"]) %></h3>
+          <%= meeting["topic"] %> with <%= meeting["speaker"] %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>

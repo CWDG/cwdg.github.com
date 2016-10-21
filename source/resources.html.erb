@@ -1,0 +1,15 @@
+<section class="resources">
+  <div class="container">
+    <h2>Resources</h2>
+    <div class="resource-list">
+      <% data.resources.each do |category, list| %>
+        <h3><%= category %></h3>
+        <ul>
+          <% list.each do |name, url| %>
+            <li><a href=<%= url %>><%= name %></a></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+</section>

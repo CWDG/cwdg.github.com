@@ -1,0 +1,128 @@
+header {
+  @include media($tablet) {
+    padding-bottom: 46px;
+    h1 {
+      font-size: 34px;
+    }
+  }
+}
+
+.button {
+  @include media($tablet) {
+    margin-bottom: 0px;
+  }
+
+  @include media($mobile) {
+    margin-bottom: 0px;
+  }
+}
+
+.introduction {
+  @include media($tablet) {
+    @include span-columns(6);
+    @include shift(1);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
+  }
+}
+
+.last-updated {
+  @include media($tablet) {
+    display: none;
+  }
+
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+.logo-container {
+  @include media($tablet) {
+    span {
+      display: none;
+    }
+  }
+}
+
+.info-column {
+  @include media($mobile) {
+    width: 100%;
+    text-align: justify;
+  }
+  @include media($tablet) {
+    width: 100%;
+  }
+}
+
+.nav-item {
+  @include media($tablet) {
+    .about-large {
+      display: none;
+    }
+
+    .about-mobile {
+      display: inline;
+    }
+  }
+
+  @include media($mobile) {
+    a > span.nav-description {
+      display: none;
+    }
+
+    .mega-octicon {
+      font-size: 28px;
+    }
+  }
+}
+
+.next-meeting {
+  @include media($mobile) {
+    text-align: center;
+  }
+  @include media($tablet) {
+    text-align: center;
+  }
+}
+
+.user-auth-container {
+  @include media($tablet) {
+    @include span-columns(3);
+  }
+
+  @include media($mobile) {
+    @include span-columns(2);
+  }
+
+  .signin-text {
+    @include media($mobile) {
+      display: none;
+    }
+  }
+}
+
+.user-auth-navbar {
+  @include media($tablet) {
+    margin-bottom: 32px;
+  }
+
+  @include media($mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.info-column,
+#getting-started,
+.officer-blocks,
+ul.meeting-list,
+.resource-list {
+  @include media($tablet) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
