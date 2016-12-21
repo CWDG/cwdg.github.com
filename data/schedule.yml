@@ -23,3 +23,7 @@
   date: 2016-12-06
   speaker: "Marwan Nakhaleh"
   topic: "Building an Image Sharing Website with Ruby on Rails"
+-
+  date: 2017-01-10
+  speaker: John Simerlink
+  topic:  Standardized and Scalable Deployment with Docker
