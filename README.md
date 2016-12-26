@@ -21,6 +21,14 @@ This is our latest web application for our group in order for us to manage our g
 * Install the dependencies
 
         bundle install
+        
+   if having trouble installing ffi gem, after installing ruby on Debian-based system (i.e. Ubuntu, Linux Mint... etc.)          install  ruby developement tools :
+         
+         sudo apt install ruby-dev
+         
+    also, bundler does not come with ruby. Install that by doing :
+         
+         sudo apt install bundler
 
 Done!
 
