@@ -76,7 +76,9 @@ BOOM!! Done.
 
 ## Updating Meetings and Resources
 
-The meetings and resources are kept in [Middleman "Local Data" files](https://middlemanapp.com/advanced/data_files/). The data is stored and YAML, and should be fairly intuitive to work with. You can find the data files in the `data` directory. If you have commit access to the CWDG/cwdg.github.io repo, you can directly [update the resources](https://github.com/CWDG/cwdg.github.io/edit/source/data/resources.yml) or [update the schedule](https://github.com/CWDG/cwdg.github.io/edit/source/data/schedule.yml) on GitHub.
+The meetings and resources are kept in [Middleman "Local Data" files](https://middlemanapp.com/advanced/data_files/). The data is stored and YAML, and should be fairly intuitive to work with. You can find the data files in the `data` directory. Note that the index page looks for the next meeting that hasn't occurred in the schedule file. This value should **NOT** be hardcoded. It's recommended to at least put the dates of all of the meetings of the semester in the schedule with topic and speaker as "???" if the schedule isn't planned in advance.
+
+If you have commit access to the CWDG/cwdg.github.io repo, you can directly [update the resources](https://github.com/CWDG/cwdg.github.io/edit/source/data/resources.yml) or [update the schedule](https://github.com/CWDG/cwdg.github.io/edit/source/data/schedule.yml) on GitHub.
 
 ## Deployment
 
