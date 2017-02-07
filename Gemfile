@@ -13,6 +13,8 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 
+ruby '2.4.0'
+
 # Stylesheet items
 gem 'bourbon'
 gem 'neat'
