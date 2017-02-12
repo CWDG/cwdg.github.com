@@ -9,5 +9,9 @@ Vagrant.configure('2') do |config|
   config.vm.network :forwarded_port, guest: 35729, host: 35729
   config.vm.provision :shell, path: 'script/vagrant-bootstrap', keep_color: true
 
-  config.vm.synced_folder ".", "/home/vagrant/cwdg-website"
+  if `uname`.include? "Linux"
+    config.vm.synced_folder '.', '/vagrant', type: 'rsync'
+  elsif `uname`.include? "Darwin"
+    config.vm.synced_folder ".", "/home/vagrant/cwdg-website"
+  end
 end
