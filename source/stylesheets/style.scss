@@ -309,17 +309,19 @@ section {
   @include row();
 
   .officer-panel {
-    @include span-columns(3);
     float: left;
 
+    @include media($desktop) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
     @include media($tablet) {
-      // For some reason now 8 columns wide?
       @include span-columns(4);
       @include omega(2n);
     }
 
     @include media($mobile) {
-      // For some reason now 4 columns wide?
       @include span-columns(4);
     }
 
