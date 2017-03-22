@@ -900,14 +900,23 @@ section {
     display: block; }
   /* line 311, style.scss */
   .officers .officer-panel {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
     float: left; }
-    /* line 89, ../../../../../var/lib/gems/2.3.0/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .officers .officer-panel:last-child {
-      margin-right: 0; }
+    @media screen and (min-width: 769px) {
+      /* line 311, style.scss */
+      .officers .officer-panel {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        /* line 89, ../../../../../var/lib/gems/2.3.0/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .officers .officer-panel:last-child {
+          margin-right: 0; }
+        /* line 78, ../../../../../var/lib/gems/2.3.0/gems/neat-1.8.0/app/assets/stylesheets/grid/_omega.scss */
+        .officers .officer-panel:nth-child(3n) {
+          margin-right: 0; }
+        /* line 83, ../../../../../var/lib/gems/2.3.0/gems/neat-1.8.0/app/assets/stylesheets/grid/_omega.scss */
+        .officers .officer-panel:nth-child(3n+1) {
+          clear: left; } }
     @media screen and (max-width: 768px) {
       /* line 311, style.scss */
       .officers .officer-panel {
@@ -934,7 +943,7 @@ section {
         /* line 89, ../../../../../var/lib/gems/2.3.0/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
         .officers .officer-panel:last-child {
           margin-right: 0; } }
-    /* line 326, style.scss */
+    /* line 328, style.scss */
     .officers .officer-panel img {
       width: 100%; }
 
